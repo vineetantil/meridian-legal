@@ -1,212 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meridian — Privacy Policy</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #ffffff; }
-  .container { max-width: 780px; margin: 0 auto; padding: 60px 32px 80px; }
-  .header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid #e5e5e5; }
-  .app-name { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #666; margin-bottom: 12px; }
-  h1 { font-size: 32px; font-weight: 700; color: #0f0f0f; margin-bottom: 12px; }
-  .meta { font-size: 14px; color: #666; }
-  .badge-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
-  .badge { font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 4px; }
-  .badge-ccpa { background: #e8f4fd; color: #0066cc; }
-  .badge-gdpr { background: #e8f8f0; color: #00703c; }
-  .badge-ca { background: #fff3e8; color: #cc5500; }
-  .toc { background: #f7f7f7; border-radius: 8px; padding: 24px 28px; margin-bottom: 48px; }
-  .toc-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #666; margin-bottom: 14px; }
-  .toc ol { padding-left: 20px; }
-  .toc li { margin-bottom: 6px; }
-  .toc a { color: #0066cc; text-decoration: none; font-size: 14px; }
-  .toc a:hover { text-decoration: underline; }
-  h2 { font-size: 20px; font-weight: 700; color: #0f0f0f; margin: 48px 0 16px; padding-top: 8px; border-top: 2px solid #e5e5e5; }
-  h3 { font-size: 16px; font-weight: 700; color: #0f0f0f; margin: 28px 0 10px; }
-  p { margin-bottom: 16px; color: #333; }
-  ul, ol { padding-left: 24px; margin-bottom: 16px; }
-  li { margin-bottom: 8px; color: #333; }
-  .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 20px 0; }
-  .highlight-box p { margin: 0; color: #0a3d6b; font-size: 15px; }
-  .warning-box { background: #fff8f0; border-left: 4px solid #cc5500; padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 20px 0; }
-  .warning-box p { margin: 0; color: #7a3300; font-size: 15px; }
-  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; }
-  th { background: #f0f0f0; text-align: left; padding: 10px 14px; font-weight: 600; border: 1px solid #ddd; color: #333; }
-  td { padding: 10px 14px; border: 1px solid #ddd; vertical-align: top; color: #333; }
-  tr:nth-child(even) td { background: #fafafa; }
-  .contact-box { background: #f7f7f7; border-radius: 8px; padding: 24px 28px; margin-top: 16px; }
-  .contact-box p { margin-bottom: 6px; }
-  .rights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
-  .right-card { background: #f7f7f7; border-radius: 6px; padding: 16px; }
-  .right-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #0f0f0f; }
-  .right-card p { font-size: 14px; margin: 0; color: #555; }
-  .footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #999; text-align: center; }
-  @media (max-width: 600px) { .rights-grid { grid-template-columns: 1fr; } .container { padding: 40px 20px 60px; } h1 { font-size: 26px; } }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian — Privacy Policy</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      color: #1a1a1a;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    header .app-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #555;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0.5rem 0 0.25rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    .badges {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
+    .badge {
+      background: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 0.2rem 0.75rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: #444;
+    }
+    .summary-box {
+      background: #f9f9f9;
+      border-left: 4px solid #333;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0 2rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.95rem;
+    }
+    nav {
+      background: #f4f4f4;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    nav h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 0 0 0.75rem;
+    }
+    nav ol {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.9rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+    nav ol li { margin-bottom: 0.25rem; }
+    nav a { color: #333; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #e5e5e5;
+    }
+    h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+    h4 { font-size: 1rem; font-weight: 600; margin: 1.25rem 0 0.4rem; }
+    p { margin: 0.6rem 0 1rem; }
+    ul, ol { padding-left: 1.5rem; margin: 0.5rem 0 1rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: #0070c9; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin: 1rem 0 1.5rem;
+    }
+    th {
+      background: #f0f0f0;
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      font-weight: 600;
+      border: 1px solid #ddd;
+    }
+    td {
+      padding: 0.55rem 0.75rem;
+      border: 1px solid #ddd;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      nav ol { columns: 1; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
 
-  <div class="header">
-    <div class="app-name">Meridian</div>
-    <h1>Privacy Policy</h1>
-    <div class="meta">Effective Date: Mar 22, 2026 &nbsp;·&nbsp; Last Updated: Mar 22, 2026</div>
-    <div class="badge-row">
-      <span class="badge badge-ccpa">CCPA Compliant</span>
-      <span class="badge badge-gdpr">GDPR Compliant</span>
-      <span class="badge badge-ca">California Privacy Rights</span>
-    </div>
+<header>
+  <div class="app-name">Meridian</div>
+  <h1>Privacy Policy</h1>
+  <div class="meta">Effective Date: Mar 22, 2026 &nbsp;·&nbsp; Last Updated: Mar 27, 2026</div>
+  <div class="badges">
+    <span class="badge">CCPA Compliant</span>
+    <span class="badge">GDPR Compliant</span>
+    <span class="badge">California Privacy Rights</span>
   </div>
+</header>
 
-  <div class="toc">
-    <div class="toc-title">Contents</div>
-    <ol>
-      <li><a href="#who-we-are">Who We Are</a></li>
-      <li><a href="#information-we-collect">Information We Collect</a></li>
-      <li><a href="#how-we-use">How We Use Your Information</a></li>
-      <li><a href="#legal-bases">Legal Bases for Processing (GDPR)</a></li>
-      <li><a href="#third-parties">Third-Party Services</a></li>
-      <li><a href="#data-sharing">How We Share Your Information</a></li>
-      <li><a href="#sharing-feature">Journal Entry Sharing</a></li>
-      <li><a href="#data-retention">Data Retention</a></li>
-      <li><a href="#security">Security</a></li>
-      <li><a href="#children">Children's Privacy</a></li>
-      <li><a href="#gdpr-rights">Your Rights Under GDPR</a></li>
-      <li><a href="#ccpa-rights">Your Rights Under CCPA / CPRA (California)</a></li>
-      <li><a href="#international">International Data Transfers</a></li>
-      <li><a href="#changes">Changes to This Policy</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ol>
-  </div>
+<nav>
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#who-we-are">Who We Are</a></li>
+    <li><a href="#information-we-collect">Information We Collect</a></li>
+    <li><a href="#how-we-use">How We Use Your Information</a></li>
+    <li><a href="#legal-bases">Legal Bases for Processing (GDPR)</a></li>
+    <li><a href="#third-parties">Third-Party Services</a></li>
+    <li><a href="#data-sharing">How We Share Your Information</a></li>
+    <li><a href="#sharing-feature">Journal Entry Sharing</a></li>
+    <li><a href="#data-retention">Data Retention</a></li>
+    <li><a href="#security">Security</a></li>
+    <li><a href="#children">Children's Privacy</a></li>
+    <li><a href="#gdpr-rights">Your Rights Under GDPR</a></li>
+    <li><a href="#ccpa-rights">Your Rights Under CCPA / CPRA (California)</a></li>
+    <li><a href="#international">International Data Transfers</a></li>
+    <li><a href="#changes">Changes to This Policy</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ol>
+</nav>
 
-  <div class="highlight-box">
-    <p><strong>The short version:</strong> Meridian is a travel journal app. We collect your journal entries, photos, and location data to power the app. We do not sell your personal information to anyone. You can request deletion of your data at any time. When you delete your account, all your data is permanently and immediately deleted with no recovery period.</p>
-  </div>
+<div class="summary-box">
+  <strong>The short version:</strong> Meridian is a travel journal app. We collect your journal entries, photos, and location data to power the app. We do not sell your personal information to anyone. You can request deletion of your data at any time. When you delete your account, all your data is permanently and immediately deleted with no recovery period.
+</div>
 
-  <!-- 1 -->
-  <h2 id="who-we-are">1. Who We Are</h2>
-  <p>Meridian ("we," "us," or "our") is a mobile application that lets you document your travels through journal entries, photos, and maps. The app is developed and operated by Vineet Antil, located at San Francisco, California, United States.</p>
-  <p>For the purposes of the General Data Protection Regulation (GDPR), we are the <strong>data controller</strong> of your personal information. For the purposes of the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), we are the <strong>business</strong> responsible for your personal information.</p>
-  <p>If you have any questions about this Privacy Policy, please contact us at: <strong>vineetantil@gmail.com</strong></p>
+<h2 id="who-we-are">1. Who We Are</h2>
+<p>Meridian ("we," "us," or "our") is a mobile application that lets you document your travels through journal entries, photos, and maps. The app is developed and operated by Vineet Antil, located at San Francisco, California, United States.</p>
+<p>For the purposes of the General Data Protection Regulation (GDPR), we are the <strong>data controller</strong> of your personal information. For the purposes of the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), we are the <strong>business</strong> responsible for your personal information.</p>
+<p>If you have any questions about this Privacy Policy, please contact us at: <strong>vineetantil@gmail.com</strong></p>
 
-  <!-- 2 -->
-  <h2 id="information-we-collect">2. Information We Collect</h2>
+<h2 id="information-we-collect">2. Information We Collect</h2>
 
-  <h3>2.1 Information You Provide Directly</h3>
-  <ul>
-    <li><strong>Account information:</strong> When you create an account with email and password, we collect your email address and the display name you choose. If you sign in with Google, we receive your display name and email address from your Google account.</li>
-    <li><strong>Home city:</strong> During onboarding, you may search for and set your home city. This search is powered by Google Places API. We store the city name and its coordinates as provided by Google Places. We do not collect your street address or precise home GPS coordinates.</li>
-    <li><strong>Journal entries:</strong> Text, notes, titles, and descriptions you write within the app.</li>
-    <li><strong>Photos:</strong> Images you upload from your device's photo library. We process EXIF metadata (including GPS coordinates and timestamps) embedded in photos to automatically tag entries with location information. EXIF data is extracted at the time of upload and stored as structured location data; we do not store raw EXIF bytes indefinitely.</li>
-    <li><strong>Travel dates and itineraries:</strong> Trip names, dates, and organizational information you create.</li>
-    <li><strong>Place information:</strong> Names, addresses, and coordinates of locations you pin, search for, or associate with entries.</li>
-  </ul>
+<h3>2.1 Information You Provide Directly</h3>
+<ul>
+  <li><strong>Account information:</strong> When you create an account with email and password, we collect your email address and the display name you choose. If you sign in with Google, we receive your display name and email address from your Google account.</li>
+  <li><strong>Home city:</strong> During onboarding, you may search for and set your home city. This search is powered by Google Places API. We store the city name and its coordinates as provided by Google Places. We do not collect your street address or precise home GPS coordinates.</li>
+  <li><strong>Journal entries:</strong> Text, notes, titles, and descriptions you write within the app.</li>
+  <li><strong>Photos:</strong> Images you upload from your device's photo library. We process EXIF metadata (including GPS coordinates and timestamps) embedded in photos to automatically tag entries with location information. EXIF data is extracted at the time of upload and stored as structured location data; we do not store raw EXIF bytes indefinitely.</li>
+  <li><strong>Travel dates and itineraries:</strong> Trip names, dates, and organizational information you create.</li>
+  <li><strong>Place information:</strong> Names, addresses, and coordinates of locations you pin, search for, or associate with entries.</li>
+</ul>
 
-  <h3>2.2 Location Information</h3>
-  <div class="warning-box">
-    <p><strong>Location data is sensitive.</strong> We collect precise GPS coordinates when you tag a journal entry with a location. A record of your travel history — where you were and when — is built over time through your use of the app. You control whether to share location and may disable location access in your device settings at any time.</p>
-  </div>
-  <ul>
-    <li><strong>Precise location (GPS):</strong> Collected when you explicitly tag an entry with your current location, with your permission via iOS location permissions.</li>
-    <li><strong>Home city:</strong> A city-level location you provide during setup by searching via Google Places API. This is city-level only, not a street address or precise coordinate.</li>
-    <li><strong>Place searches:</strong> When you search for a place or city to tag, your search query is sent to Google Places API to return results. This applies both to journal entry tagging and home city setup.</li>
-    <li><strong>Offline map regions:</strong> If you download an offline map, the geographic boundaries of that region are stored locally on your device and tile requests are made to Mapbox servers.</li>
-    <li><strong>Photo EXIF location:</strong> GPS coordinates embedded in photos you upload are extracted to auto-tag journal entries. You can disable location tagging on photos at the device level before uploading.</li>
-  </ul>
+<h3>2.2 Location Information</h3>
+<p><strong>Location data is sensitive.</strong> We collect precise GPS coordinates when you tag a journal entry with a location. A record of your travel history — where you were and when — is built over time through your use of the app. You control whether to share location and may disable location access in your device settings at any time.</p>
+<ul>
+  <li><strong>Precise location (GPS):</strong> Collected when you explicitly tag an entry with your current location, with your permission via iOS location permissions.</li>
+  <li><strong>Home city:</strong> A city-level location you provide during setup by searching via Google Places API. This is city-level only, not a street address or precise coordinate.</li>
+  <li><strong>Place searches:</strong> When you search for a place or city to tag, your search query is sent to Google Places API to return results.</li>
+  <li><strong>Offline map regions:</strong> If you download an offline map, the geographic boundaries of that region are stored locally on your device and tile requests are made to Mapbox servers.</li>
+  <li><strong>Photo EXIF location:</strong> GPS coordinates embedded in photos you upload are extracted to auto-tag journal entries. You can disable location tagging on photos at the device level before uploading.</li>
+</ul>
 
-  <h3>2.3 Device and Technical Information</h3>
-  <ul>
-    <li>Device type, operating system version, and app version</li>
-    <li>Anonymous device installation ID (generated by Mapbox SDK; contains no personally identifying information)</li>
-    <li>IP address (processed by our infrastructure providers as part of normal server operations; we do not implement additional logging beyond what our infrastructure providers collect by default)</li>
-    <li>Crash reports and performance diagnostics via Expo EAS</li>
-  </ul>
+<h3>2.3 Device and Technical Information</h3>
+<ul>
+  <li>Device type, operating system version, and app version</li>
+  <li>Anonymous device installation ID (generated by Mapbox SDK; contains no personally identifying information)</li>
+  <li>IP address (processed by our infrastructure providers as part of normal server operations; we do not implement additional logging beyond what our infrastructure providers collect by default)</li>
+  <li>Crash reports and performance diagnostics via Expo EAS</li>
+</ul>
 
-  <h3>2.4 Information from Third-Party Sign-In</h3>
-  <p>If you choose to sign in with Google, we receive the following information from Google with your permission:</p>
-  <ul>
-    <li>Your display name as set in your Google account</li>
-    <li>Your Google account email address</li>
-  </ul>
-  <p>We do not receive your Google password, contacts, calendar, or any other Google account data. This information is used solely to create and identify your Meridian account.</p>
+<h3>2.4 Information from Third-Party Sign-In</h3>
+<p>If you choose to sign in with Google, we receive the following information from Google with your permission:</p>
+<ul>
+  <li>Your display name as set in your Google account</li>
+  <li>Your Google account email address</li>
+</ul>
+<p>We do not receive your Google password, contacts, calendar, or any other Google account data. This information is used solely to create and identify your Meridian account.</p>
 
-  <h3>2.5 Information We Do Not Collect</h3>
-  <ul>
-    <li>We do not access your device camera directly — photos must be selected from your existing photo library.</li>
-    <li>We do not collect payment card information directly — payments are processed by Apple App Store and are subject to Apple's privacy policy.</li>
-    <li>We do not collect biometric data, government IDs, or financial account numbers.</li>
-    <li>We do not collect your street address or precise home GPS coordinates — home location is city-level only.</li>
-  </ul>
+<h3>2.5 Subscription and Payment Information</h3>
+<p>If you subscribe to Meridian Pro, payment is processed entirely by Apple through the App Store. We do not receive or store your payment card details, billing address, or any raw payment information.</p>
+<p>We receive the following subscription-related information via RevenueCat, our subscription management provider:</p>
+<ul>
+  <li>Subscription status (active, expired, cancelled, in trial)</li>
+  <li>Apple transaction IDs associated with your purchases</li>
+  <li>An anonymous app user ID used to link your subscription to your Meridian account</li>
+  <li>Subscription product identifier (e.g., annual Pro plan)</li>
+</ul>
+<p>This information is used solely to determine whether Meridian Pro features should be active for your account. We do not use it for advertising or share it beyond what is described in this policy.</p>
 
-  <!-- 3 -->
-  <h2 id="how-we-use">3. How We Use Your Information</h2>
+<h3>2.6 Information We Do Not Collect</h3>
+<ul>
+  <li>We do not access your device camera directly — photos must be selected from your existing photo library.</li>
+  <li>We do not collect payment card numbers, billing addresses, or financial account information — payments are processed by Apple App Store.</li>
+  <li>We do not collect biometric data, government IDs, or financial account numbers.</li>
+  <li>We do not collect your street address or precise home GPS coordinates — home location is city-level only.</li>
+</ul>
 
-  <table>
+<h2 id="how-we-use">3. How We Use Your Information</h2>
+
+<table>
+  <thead>
     <tr>
       <th>Purpose</th>
       <th>Information Used</th>
     </tr>
-    <tr>
-      <td>Provide and operate the app</td>
-      <td>Account info, journal entries, photos, location data</td>
-    </tr>
-    <tr>
-      <td>Display maps and location features</td>
-      <td>GPS coordinates, place searches, offline map regions</td>
-    </tr>
-    <tr>
-      <td>Set and display home city</td>
-      <td>City name and coordinates from Google Places API search</td>
-    </tr>
-    <tr>
-      <td>Sync your data across devices</td>
-      <td>All content you create, via PowerSync and Supabase</td>
-    </tr>
-    <tr>
-      <td>Auto-tag journal entries with location from photos</td>
-      <td>EXIF GPS data extracted from uploaded photos</td>
-    </tr>
-    <tr>
-      <td>Enable journal entry sharing between users</td>
-      <td>Shared entry content, visible only to the designated recipient with a Meridian account</td>
-    </tr>
-    <tr>
-      <td>Authenticate your account</td>
-      <td>Email and password, or Google account display name and email</td>
-    </tr>
-    <tr>
-      <td>Send account-related communications</td>
-      <td>Email address (transactional only — no marketing emails)</td>
-    </tr>
-    <tr>
-      <td>Improve app performance and fix bugs</td>
-      <td>Crash reports and device diagnostics via Expo EAS</td>
-    </tr>
-    <tr>
-      <td>Comply with legal obligations</td>
-      <td>As required by applicable law</td>
-    </tr>
-  </table>
+  </thead>
+  <tbody>
+    <tr><td>Provide and operate the app</td><td>Account info, journal entries, photos, location data</td></tr>
+    <tr><td>Display maps and location features</td><td>GPS coordinates, place searches, offline map regions</td></tr>
+    <tr><td>Set and display home city</td><td>City name and coordinates from Google Places API search</td></tr>
+    <tr><td>Sync your data across devices</td><td>All content you create, via PowerSync and Supabase</td></tr>
+    <tr><td>Auto-tag journal entries with location from photos</td><td>EXIF GPS data extracted from uploaded photos</td></tr>
+    <tr><td>Enable journal entry sharing between users</td><td>Shared entry content, visible only to the designated recipient with a Meridian account</td></tr>
+    <tr><td>Authenticate your account</td><td>Email and password, or Google account display name and email</td></tr>
+    <tr><td>Manage subscription and unlock Pro features</td><td>Subscription status and transaction metadata from RevenueCat</td></tr>
+    <tr><td>Send account-related communications</td><td>Email address (transactional only — receipts, renewal notices, and account communications; no marketing emails)</td></tr>
+    <tr><td>Improve app performance and fix bugs</td><td>Crash reports and device diagnostics via Expo EAS</td></tr>
+    <tr><td>Comply with legal obligations</td><td>As required by applicable law</td></tr>
+  </tbody>
+</table>
 
-  <p>We do not use your personal information for automated decision-making or profiling that produces legal or similarly significant effects. We do not use your data for targeted advertising.</p>
+<p>We do not use your personal information for automated decision-making or profiling that produces legal or similarly significant effects. We do not use your data for targeted advertising.</p>
 
-  <!-- 4 -->
-  <h2 id="legal-bases">4. Legal Bases for Processing (GDPR)</h2>
-  <p>If you are located in the European Economic Area (EEA) or United Kingdom, we process your personal data under the following legal bases:</p>
-  <ul>
-    <li><strong>Contract performance (Article 6(1)(b)):</strong> Processing necessary to provide the Meridian service — creating and syncing journal entries, displaying maps, managing your account, enabling entry sharing, and setting your home city.</li>
-    <li><strong>Legitimate interests (Article 6(1)(f)):</strong> Improving app performance through crash diagnostics, preventing fraud, and maintaining security, where these interests are not overridden by your rights.</li>
-    <li><strong>Legal obligation (Article 6(1)(c)):</strong> Where we are required to process data to comply with applicable law.</li>
-    <li><strong>Consent (Article 6(1)(a)):</strong> For precise GPS location access, which you grant through iOS location permission prompts and may withdraw at any time in your device settings.</li>
-  </ul>
+<h2 id="legal-bases">4. Legal Bases for Processing (GDPR)</h2>
+<p>If you are located in the European Economic Area (EEA) or United Kingdom, we process your personal data under the following legal bases:</p>
+<ul>
+  <li><strong>Contract performance (Article 6(1)(b)):</strong> Processing necessary to provide the Meridian service — creating and syncing journal entries, displaying maps, managing your account, enabling entry sharing, managing your subscription, and setting your home city.</li>
+  <li><strong>Legitimate interests (Article 6(1)(f)):</strong> Improving app performance through crash diagnostics, preventing fraud, and maintaining security, where these interests are not overridden by your rights.</li>
+  <li><strong>Legal obligation (Article 6(1)(c)):</strong> Where we are required to process data to comply with applicable law.</li>
+  <li><strong>Consent (Article 6(1)(a)):</strong> For precise GPS location access, which you grant through iOS location permission prompts and may withdraw at any time in your device settings.</li>
+</ul>
 
-  <!-- 5 -->
-  <h2 id="third-parties">5. Third-Party Services</h2>
-  <p>Meridian integrates the following third-party services. Each receives certain information as part of delivering app functionality:</p>
+<h2 id="third-parties">5. Third-Party Services</h2>
+<p>Meridian integrates the following third-party services. Each receives certain information as part of delivering app functionality:</p>
 
-  <table>
+<table>
+  <thead>
     <tr>
       <th>Service</th>
       <th>Provider</th>
@@ -214,221 +277,207 @@
       <th>Data Shared</th>
       <th>Privacy Policy</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>Database &amp; Authentication</td>
       <td>Supabase</td>
       <td>Storing and syncing journal data; account authentication including Google Sign-In</td>
       <td>Account info, journal entries, photos, location records, home city</td>
-      <td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td>
+      <td><a href="https://supabase.com/privacy">supabase.com/privacy</a></td>
     </tr>
     <tr>
       <td>Offline sync</td>
       <td>PowerSync</td>
       <td>Enabling offline-first data sync between device and server</td>
       <td>Sync metadata and journal data structure</td>
-      <td><a href="https://www.powersync.com/legal/privacy-policy" target="_blank">powersync.com/privacy</a></td>
+      <td><a href="https://www.powersync.com/legal/privacy-policy">powersync.com/privacy</a></td>
     </tr>
     <tr>
       <td>Maps</td>
       <td>Mapbox</td>
       <td>Rendering interactive and offline maps</td>
       <td>Map tile requests, anonymous device ID, approximate location when viewing maps</td>
-      <td><a href="https://www.mapbox.com/legal/privacy" target="_blank">mapbox.com/legal/privacy</a></td>
+      <td><a href="https://www.mapbox.com/legal/privacy">mapbox.com/legal/privacy</a></td>
     </tr>
     <tr>
       <td>Place search &amp; home city</td>
       <td>Google Places API</td>
-      <td>Searching for and resolving place names, addresses, and city locations (used for both journal tagging and home city setup)</td>
+      <td>Searching for and resolving place names, addresses, and city locations</td>
       <td>Search queries, session tokens, device IP address</td>
-      <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+      <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
     </tr>
     <tr>
       <td>Google Sign-In</td>
       <td>Google (via Supabase Auth)</td>
       <td>Optional account authentication using your Google account</td>
       <td>Google account display name and email address (with your permission)</td>
-      <td><a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></td>
+      <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+    </tr>
+    <tr>
+      <td>Subscription management</td>
+      <td>RevenueCat</td>
+      <td>Managing in-app subscription status, entitlements, and purchase validation</td>
+      <td>Subscription status, Apple transaction IDs, anonymous app user ID</td>
+      <td><a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a></td>
     </tr>
     <tr>
       <td>App distribution (iOS)</td>
       <td>Apple App Store</td>
       <td>App delivery and in-app purchase processing</td>
       <td>Subject to Apple's privacy policy</td>
-      <td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td>
+      <td><a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a></td>
     </tr>
     <tr>
       <td>App framework &amp; diagnostics</td>
       <td>Expo (EAS)</td>
       <td>App builds, over-the-air updates, and crash reporting</td>
       <td>Device identifiers, crash logs, app version</td>
-      <td><a href="https://expo.dev/privacy" target="_blank">expo.dev/privacy</a></td>
+      <td><a href="https://expo.dev/privacy">expo.dev/privacy</a></td>
     </tr>
-  </table>
+  </tbody>
+</table>
 
-  <p>We do not allow these third parties to use your information for their own marketing purposes. Each provider acts as a data processor on our behalf (GDPR) or a service provider (CCPA), bound by appropriate data processing agreements.</p>
-  <p>Infrastructure providers including Supabase may collect server access logs (including IP addresses) as part of their standard operations. We do not implement additional server-side logging beyond what these providers collect by default.</p>
+<p>We do not allow these third parties to use your information for their own marketing purposes. Each provider acts as a data processor on our behalf (GDPR) or a service provider (CCPA), bound by appropriate data processing agreements.</p>
+<p>Infrastructure providers including Supabase may collect server access logs (including IP addresses) as part of their standard operations. We do not implement additional server-side logging beyond what these providers collect by default.</p>
 
-  <!-- 6 -->
-  <h2 id="data-sharing">6. How We Share Your Information</h2>
-  <p>We do not sell, rent, or trade your personal information to third parties. We share your information only in the following limited circumstances:</p>
-  <ul>
-    <li><strong>Service providers:</strong> As described in Section 5 above, with third-party services that help us operate the app.</li>
-    <li><strong>Other Meridian users (with your action):</strong> When you choose to share a journal entry with another user, that entry becomes visible to the designated recipient. See Section 7 for full details on how sharing works.</li>
-    <li><strong>Legal requirements:</strong> When required by law, court order, or government authority, or when necessary to protect our rights, property, or the safety of our users.</li>
-    <li><strong>Business transfers:</strong> If Meridian is acquired, merged, or its assets are transferred, your information may be transferred as part of that transaction. We will notify you via email or prominent in-app notice before your information becomes subject to a different privacy policy.</li>
-    <li><strong>With your consent:</strong> For any other purpose, only with your explicit consent.</li>
-  </ul>
+<h2 id="data-sharing">6. How We Share Your Information</h2>
+<p>We do not sell, rent, or trade your personal information to third parties. We share your information only in the following limited circumstances:</p>
+<ul>
+  <li><strong>Service providers:</strong> As described in Section 5 above, with third-party services that help us operate the app.</li>
+  <li><strong>Other Meridian users (with your action):</strong> When you choose to share a journal entry with another user, that entry becomes visible to the designated recipient. See Section 7 for full details.</li>
+  <li><strong>Legal requirements:</strong> When required by law, court order, or government authority, or when necessary to protect our rights, property, or the safety of our users.</li>
+  <li><strong>Business transfers:</strong> If Meridian is acquired, merged, or its assets are transferred, your information may be transferred as part of that transaction. We will notify you via email or prominent in-app notice before your information becomes subject to a different privacy policy.</li>
+  <li><strong>With your consent:</strong> For any other purpose, only with your explicit consent.</li>
+</ul>
+<p><strong>We do not sell personal information.</strong> This applies to all categories of personal information, including precise geolocation data. As required by CCPA/CPRA, we disclose this explicitly.</p>
 
-  <div class="highlight-box">
-    <p><strong>We do not sell personal information.</strong> This applies to all categories of personal information, including precise geolocation data. As required by CCPA/CPRA, we disclose this explicitly.</p>
-  </div>
+<h2 id="sharing-feature">7. Journal Entry Sharing</h2>
+<p>Meridian allows you to share individual journal entries with other Meridian users. Here is how this feature works and what it means for your data:</p>
+<ul>
+  <li><strong>Recipient must have a Meridian account:</strong> Shared entries are only accessible to users who have a Meridian account. The shared link cannot be viewed by anyone without an authenticated Meridian account.</li>
+  <li><strong>Delivery:</strong> When you share an entry, the recipient receives a link visible in their Meridian notifications and received links section.</li>
+  <li><strong>Your control:</strong> You retain full control over shared entries. You may stop sharing an entry at any time, which immediately revokes access for the recipient.</li>
+  <li><strong>Account deletion and shared content:</strong> If you delete your account, all of your journal entries — including those you have shared — are permanently and immediately deleted from our systems.</li>
+  <li><strong>No copies stored separately:</strong> We do not create separate copies of shared entries. The shared link references your original entry. Deletion of the entry or your account removes the underlying data entirely.</li>
+</ul>
 
-  <!-- 7 — NEW SECTION -->
-  <h2 id="sharing-feature">7. Journal Entry Sharing</h2>
-  <p>Meridian allows you to share individual journal entries with other Meridian users. Here is how this feature works and what it means for your data:</p>
-  <ul>
-    <li><strong>Recipient must have a Meridian account:</strong> Shared entries are only accessible to users who have a Meridian account. The shared link cannot be viewed by anyone without an authenticated Meridian account.</li>
-    <li><strong>Delivery:</strong> When you share an entry, the recipient receives a link visible in their Meridian notifications and received links section.</li>
-    <li><strong>Your control:</strong> You retain full control over shared entries. You may stop sharing an entry at any time, which immediately revokes access for the recipient.</li>
-    <li><strong>Account deletion and shared content:</strong> If you delete your account, all of your journal entries — including those you have shared — are permanently and immediately deleted from our systems. Recipients who attempt to access a link to a deleted entry will see a message that the content is no longer available. No copy of the shared data is retained by the recipient or our systems after deletion.</li>
-    <li><strong>No copies stored separately:</strong> We do not create separate copies of shared entries. The shared link references your original entry. Deletion of the entry or your account removes the underlying data entirely.</li>
-  </ul>
-  <p>This sharing feature is designed with privacy by default: you share what you choose, and deletion is complete and immediate.</p>
+<h2 id="data-retention">8. Data Retention</h2>
+<p>We retain your personal information for as long as your account is active. Specifically:</p>
+<ul>
+  <li><strong>Journal entries, photos, and location data:</strong> Retained until you delete them individually or delete your account.</li>
+  <li><strong>Account information:</strong> Retained for the duration of your account.</li>
+  <li><strong>Subscription data:</strong> Subscription status and transaction metadata are retained for as long as your account exists and for a reasonable period thereafter to comply with legal and financial record-keeping obligations.</li>
+  <li><strong>Account deletion:</strong> When you delete your account through the app, all of your personal data — including journal entries, photos, location data, home city, and account information — is permanently and immediately deleted from our systems. There is no recovery period.</li>
+  <li><strong>Infrastructure provider logs:</strong> Supabase and other infrastructure providers may retain server access logs according to their own retention policies. Please refer to the privacy policies in Section 5 for their specific retention practices.</li>
+  <li><strong>Shared entry links:</strong> When your account is deleted, all shared entry links become immediately inaccessible and the underlying data is deleted, as described in Section 7.</li>
+</ul>
 
-  <!-- 8 -->
-  <h2 id="data-retention">8. Data Retention</h2>
-  <p>We retain your personal information for as long as your account is active. Specifically:</p>
-  <ul>
-    <li><strong>Journal entries, photos, and location data:</strong> Retained until you delete them individually or delete your account.</li>
-    <li><strong>Account information:</strong> Retained for the duration of your account.</li>
-    <li><strong>Account deletion:</strong> When you delete your account through the app, all of your personal data — including journal entries, photos, location data, home city, and account information — is permanently and immediately deleted from our systems. There is no recovery period. Deleted accounts and their data cannot be restored.</li>
-    <li><strong>Infrastructure provider logs:</strong> Supabase and other infrastructure providers may retain server access logs (including IP addresses) according to their own retention policies as part of their standard operations. We do not control or extend these default retention periods. Please refer to the privacy policies of our third-party providers listed in Section 5 for their specific retention practices.</li>
-    <li><strong>Shared entry links:</strong> When your account is deleted, all shared entry links become immediately inaccessible and the underlying data is deleted, as described in Section 7.</li>
-  </ul>
+<h2 id="security">9. Security</h2>
+<p>We take reasonable technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
+<ul>
+  <li>Encryption of data in transit using TLS</li>
+  <li>Encryption of data at rest within our Supabase database</li>
+  <li>Row-level security in our database ensuring users can only access their own data</li>
+  <li>Authentication controls through Supabase Auth including secure password hashing and session management</li>
+  <li>Shared journal entries are access-controlled and require an authenticated Meridian account to view</li>
+</ul>
+<p>However, no method of transmission or storage is 100% secure. If you believe your account has been compromised, please contact us immediately at <strong>vineetantil@gmail.com</strong>.</p>
+<p>In the event of a personal data breach that poses a risk to your rights and freedoms, we will notify you and applicable supervisory authorities as required by GDPR (within 72 hours) and applicable U.S. state law.</p>
 
-  <!-- 9 -->
-  <h2 id="security">9. Security</h2>
-  <p>We take reasonable technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include:</p>
-  <ul>
-    <li>Encryption of data in transit using TLS</li>
-    <li>Encryption of data at rest within our Supabase database</li>
-    <li>Row-level security in our database ensuring users can only access their own data</li>
-    <li>Authentication controls through Supabase Auth including secure password hashing and session management</li>
-    <li>Shared journal entries are access-controlled and require an authenticated Meridian account to view</li>
-  </ul>
-  <p>However, no method of transmission or storage is 100% secure. If you believe your account has been compromised, please contact us immediately at <strong>vineetantil@gmail.com</strong>.</p>
-  <p>In the event of a personal data breach that poses a risk to your rights and freedoms, we will notify you and applicable supervisory authorities as required by GDPR (within 72 hours) and applicable U.S. state law.</p>
+<h2 id="children">10. Children's Privacy</h2>
+<p>Meridian is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <strong>vineetantil@gmail.com</strong> and we will delete the information promptly.</p>
+<p>If you are located in the EEA, the relevant age threshold is 16 (or the applicable age of digital consent in your country). If you are located in California, we comply with the Children's Online Privacy Protection Act (COPPA).</p>
 
-  <!-- 10 -->
-  <h2 id="children">10. Children's Privacy</h2>
-  <p>Meridian is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <strong>vineetantil@gmail.com</strong> and we will delete the information promptly.</p>
-  <p>If you are located in the EEA, the relevant age threshold is 16 (or the applicable age of digital consent in your country). If you are located in California, we comply with the Children's Online Privacy Protection Act (COPPA).</p>
+<h2 id="gdpr-rights">11. Your Rights Under GDPR</h2>
+<p>If you are located in the European Economic Area (EEA) or United Kingdom, you have the following rights regarding your personal data:</p>
 
-  <!-- 11 -->
-  <h2 id="gdpr-rights">11. Your Rights Under GDPR</h2>
-  <p>If you are located in the European Economic Area (EEA) or United Kingdom, you have the following rights regarding your personal data:</p>
+<h4>Right of Access</h4>
+<p>You may request a copy of the personal data we hold about you.</p>
 
-  <div class="rights-grid">
-    <div class="right-card">
-      <h4>Right of Access</h4>
-      <p>You may request a copy of the personal data we hold about you.</p>
-    </div>
-    <div class="right-card">
-      <h4>Right to Rectification</h4>
-      <p>You may correct inaccurate or incomplete personal data at any time within the app or by contacting us.</p>
-    </div>
-    <div class="right-card">
-      <h4>Right to Erasure</h4>
-      <p>You may delete your account at any time through the app. All data is immediately and permanently deleted with no recovery period.</p>
-    </div>
-    <div class="right-card">
-      <h4>Right to Restriction</h4>
-      <p>You may request that we restrict processing of your data in certain circumstances.</p>
-    </div>
-    <div class="right-card">
-      <h4>Right to Data Portability</h4>
-      <p>You may request your data in JSON and/or CSV format. Contact us and we will provide an export of your journal entries, location data, and account information within 30 days.</p>
-    </div>
-    <div class="right-card">
-      <h4>Right to Object</h4>
-      <p>You may object to processing based on legitimate interests. You may withdraw location consent at any time via iOS Settings.</p>
-    </div>
-    <div class="right-card">
-      <h4>Right to Withdraw Consent</h4>
-      <p>Where processing is based on consent (such as location access), you may withdraw it at any time in your device settings without affecting prior processing.</p>
-    </div>
-    <div class="right-card">
-      <h4>Right to Complain</h4>
-      <p>You may lodge a complaint with your local data protection authority at any time.</p>
-    </div>
-  </div>
+<h4>Right to Rectification</h4>
+<p>You may correct inaccurate or incomplete personal data at any time within the app or by contacting us.</p>
 
-  <p>To exercise any of these rights, please contact us at <strong>vineetantil@gmail.com</strong>. We will respond within 30 days. We may need to verify your identity before fulfilling your request.</p>
-  <p>If you are in the EEA and believe we have not adequately addressed your concerns, you have the right to lodge a complaint with your national data protection authority (e.g., the ICO in the UK, CNIL in France, or your local EU supervisory authority).</p>
+<h4>Right to Erasure</h4>
+<p>You may delete your account at any time through the app. All data is immediately and permanently deleted with no recovery period.</p>
 
-  <!-- 12 -->
-  <h2 id="ccpa-rights">12. Your Rights Under CCPA / CPRA (California)</h2>
-  <p>If you are a California resident, the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA) grants you the following rights:</p>
+<h4>Right to Restriction</h4>
+<p>You may request that we restrict processing of your data in certain circumstances.</p>
 
-  <h3>12.1 Categories of Personal Information Collected</h3>
-  <p>In the preceding 12 months, we have collected the following categories of personal information as defined by CCPA:</p>
-  <ul>
-    <li><strong>Identifiers:</strong> Email address, display name (from account creation or Google Sign-In), anonymous device ID</li>
-    <li><strong>Geolocation data (sensitive):</strong> Precise GPS coordinates tagged to journal entries, photo EXIF location data, and home city (city-level only)</li>
-    <li><strong>Internet or other electronic network activity:</strong> App usage diagnostics, crash reports, IP address (processed by infrastructure providers as part of standard operations)</li>
-    <li><strong>Photos and other electronic data:</strong> Photos you upload from your photo library, journal entry text content</li>
-    <li><strong>Inferences:</strong> Travel patterns derived from your location history within the app</li>
-  </ul>
+<h4>Right to Data Portability</h4>
+<p>You may request your data in JSON and/or CSV format. Contact us and we will provide an export of your journal entries, location data, and account information within 30 days.</p>
 
-  <h3>12.2 Your California Rights</h3>
-  <ul>
-    <li><strong>Right to Know:</strong> You may request that we disclose what personal information we have collected about you, the sources, the purposes for collection, and the third parties with whom we share it.</li>
-    <li><strong>Right to Delete:</strong> You may delete your account at any time through the app. All personal information is immediately and permanently deleted. For requests submitted by email, we will complete deletion within 45 days.</li>
-    <li><strong>Right to Correct:</strong> You may request correction of inaccurate personal information we hold about you.</li>
-    <li><strong>Right to Opt Out of Sale or Sharing:</strong> We do not sell or share personal information for cross-context behavioral advertising. No opt-out action is required, but you may contact us to confirm.</li>
-    <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> We collect precise geolocation data, classified as sensitive personal information under CPRA. We use it only to provide core app functionality — mapping, journal geotagging, and place search. We do not use it for any secondary purpose.</li>
-    <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
-  </ul>
+<h4>Right to Object</h4>
+<p>You may object to processing based on legitimate interests. You may withdraw location consent at any time via iOS Settings.</p>
 
-  <h3>12.3 How to Submit a Request</h3>
-  <p>To exercise your California rights, contact us at <strong>vineetantil@gmail.com</strong> with the subject line "California Privacy Request." We will respond within 45 days. We may extend this period by an additional 45 days with notice.</p>
-  <p>You may designate an authorized agent to submit requests on your behalf. We may require verification of the agent's authorization.</p>
+<h4>Right to Withdraw Consent</h4>
+<p>Where processing is based on consent (such as location access), you may withdraw it at any time in your device settings without affecting prior processing.</p>
 
-  <!-- 13 -->
-  <h2 id="international">13. International Data Transfers</h2>
-  <p>Meridian is operated from the United States. If you are located in the EEA, UK, or another jurisdiction with data transfer restrictions, your personal information is transferred to and processed in the United States.</p>
-  <p>We rely on the following transfer mechanisms:</p>
-  <ul>
-    <li>Standard Contractual Clauses (SCCs) approved by the European Commission, incorporated into our agreements with Supabase and other processors</li>
-    <li>Adequacy decisions where applicable</li>
-  </ul>
-  <p>By using Meridian, you acknowledge that your information may be transferred to the United States, which may have different data protection rules than your country.</p>
+<h4>Right to Complain</h4>
+<p>You may lodge a complaint with your local data protection authority at any time.</p>
 
-  <!-- 14 -->
-  <h2 id="changes">14. Changes to This Policy</h2>
-  <p>We may update this Privacy Policy from time to time. When we make material changes, we will:</p>
-  <ul>
-    <li>Update the "Last Updated" date at the top of this page</li>
-    <li>Notify you via email (if you have provided one) or via a prominent in-app notice</li>
-    <li>For significant changes affecting how we use your sensitive data (especially location), we will seek your renewed consent where required by law</li>
-  </ul>
-  <p>Your continued use of Meridian after the effective date of the updated policy constitutes your acceptance of the changes.</p>
+<p>To exercise any of these rights, please contact us at <strong>vineetantil@gmail.com</strong>. We will respond within 30 days. We may need to verify your identity before fulfilling your request.</p>
 
-  <!-- 15 -->
-  <h2 id="contact">15. Contact Us</h2>
-  <p>If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+<h2 id="ccpa-rights">12. Your Rights Under CCPA / CPRA (California)</h2>
+<p>If you are a California resident, the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA) grants you the following rights:</p>
 
-  <div class="contact-box">
-    <p><strong>Vineet Antil</strong></p>
-    <p>Email: <strong>vineetantil@gmail.com</strong></p>
-    <p>Location: <strong>San Francisco, California, United States</strong></p>
-    <p style="margin-top: 12px; font-size: 14px; color: #666;">For GDPR-related requests, please include "GDPR Request" in the subject line.<br>For CCPA-related requests, please include "California Privacy Request" in the subject line.<br>For data export requests, please include "Data Export Request" in the subject line.</p>
-  </div>
+<h3>12.1 Categories of Personal Information Collected</h3>
+<p>In the preceding 12 months, we have collected the following categories of personal information as defined by CCPA:</p>
+<ul>
+  <li><strong>Identifiers:</strong> Email address, display name (from account creation or Google Sign-In), anonymous device ID, anonymous app user ID (RevenueCat)</li>
+  <li><strong>Geolocation data (sensitive):</strong> Precise GPS coordinates tagged to journal entries, photo EXIF location data, and home city (city-level only)</li>
+  <li><strong>Commercial information:</strong> Subscription status and Apple transaction IDs processed via RevenueCat</li>
+  <li><strong>Internet or other electronic network activity:</strong> App usage diagnostics, crash reports, IP address (processed by infrastructure providers)</li>
+  <li><strong>Photos and other electronic data:</strong> Photos you upload from your photo library, journal entry text content</li>
+  <li><strong>Inferences:</strong> Travel patterns derived from your location history within the app</li>
+</ul>
 
-  <div class="footer">
-    <p>Meridian Privacy Policy &nbsp;·&nbsp; Effective Mar 22, 2026 &nbsp;·&nbsp; Version 1.1</p>
-  </div>
+<h3>12.2 Your California Rights</h3>
+<ul>
+  <li><strong>Right to Know:</strong> You may request that we disclose what personal information we have collected about you, the sources, the purposes for collection, and the third parties with whom we share it.</li>
+  <li><strong>Right to Delete:</strong> You may delete your account at any time through the app. All personal information is immediately and permanently deleted. For requests submitted by email, we will complete deletion within 45 days.</li>
+  <li><strong>Right to Correct:</strong> You may request correction of inaccurate personal information we hold about you.</li>
+  <li><strong>Right to Opt Out of Sale or Sharing:</strong> We do not sell or share personal information for cross-context behavioral advertising. No opt-out action is required, but you may contact us to confirm.</li>
+  <li><strong>Right to Limit Use of Sensitive Personal Information:</strong> We collect precise geolocation data, classified as sensitive personal information under CPRA. We use it only to provide core app functionality — mapping, journal geotagging, and place search. We do not use it for any secondary purpose.</li>
+  <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+</ul>
 
-</div>
+<h3>12.3 How to Submit a Request</h3>
+<p>To exercise your California rights, contact us at <strong>vineetantil@gmail.com</strong> with the subject line "California Privacy Request." We will respond within 45 days. We may extend this period by an additional 45 days with notice.</p>
+<p>You may designate an authorized agent to submit requests on your behalf. We may require verification of the agent's authorization.</p>
+
+<h2 id="international">13. International Data Transfers</h2>
+<p>Meridian is operated from the United States. If you are located in the EEA, UK, or another jurisdiction with data transfer restrictions, your personal information is transferred to and processed in the United States.</p>
+<p>We rely on the following transfer mechanisms:</p>
+<ul>
+  <li>Standard Contractual Clauses (SCCs) approved by the European Commission, incorporated into our agreements with Supabase and other processors</li>
+  <li>Adequacy decisions where applicable</li>
+</ul>
+<p>By using Meridian, you acknowledge that your information may be transferred to the United States, which may have different data protection rules than your country.</p>
+
+<h2 id="changes">14. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. When we make material changes, we will:</p>
+<ul>
+  <li>Update the "Last Updated" date at the top of this page</li>
+  <li>Notify you via email (if you have provided one) or via a prominent in-app notice</li>
+  <li>For significant changes affecting how we use your sensitive data (especially location), we will seek your renewed consent where required by law</li>
+</ul>
+<p>Your continued use of Meridian after the effective date of the updated policy constitutes your acceptance of the changes.</p>
+
+<h2 id="contact">15. Contact Us</h2>
+<p>If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+<p>
+  <strong>Vineet Antil</strong><br>
+  Email: <strong>vineetantil@gmail.com</strong><br>
+  Location: <strong>San Francisco, California, United States</strong>
+</p>
+<p>For GDPR-related requests, please include "GDPR Request" in the subject line.<br>
+For CCPA-related requests, please include "California Privacy Request" in the subject line.<br>
+For data export requests, please include "Data Export Request" in the subject line.</p>
+
+<footer>
+  Meridian Privacy Policy &nbsp;·&nbsp; Effective Mar 22, 2026 &nbsp;·&nbsp; Last Updated Mar 27, 2026 &nbsp;·&nbsp; Version 1.2
+</footer>
+
 </body>
 </html>
