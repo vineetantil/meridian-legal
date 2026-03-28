@@ -1,287 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meridian — Terms of Service</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.7; color: #1a1a1a; background: #ffffff; }
-  .container { max-width: 780px; margin: 0 auto; padding: 60px 32px 80px; }
-  .header { margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid #e5e5e5; }
-  .app-name { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #666; margin-bottom: 12px; }
-  h1 { font-size: 32px; font-weight: 700; color: #0f0f0f; margin-bottom: 12px; }
-  .meta { font-size: 14px; color: #666; }
-  .toc { background: #f7f7f7; border-radius: 8px; padding: 24px 28px; margin-bottom: 48px; }
-  .toc-title { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: #666; margin-bottom: 14px; }
-  .toc ol { padding-left: 20px; }
-  .toc li { margin-bottom: 6px; }
-  .toc a { color: #0066cc; text-decoration: none; font-size: 14px; }
-  .toc a:hover { text-decoration: underline; }
-  h2 { font-size: 20px; font-weight: 700; color: #0f0f0f; margin: 48px 0 16px; padding-top: 8px; border-top: 2px solid #e5e5e5; }
-  h3 { font-size: 16px; font-weight: 700; color: #0f0f0f; margin: 28px 0 10px; }
-  p { margin-bottom: 16px; color: #333; }
-  ul, ol { padding-left: 24px; margin-bottom: 16px; }
-  li { margin-bottom: 8px; color: #333; }
-  .highlight-box { background: #f0f7ff; border-left: 4px solid #0066cc; padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 20px 0; }
-  .highlight-box p { margin: 0; color: #0a3d6b; font-size: 15px; }
-  .warning-box { background: #fff8f0; border-left: 4px solid #cc5500; padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 20px 0; }
-  .warning-box p { margin: 0; color: #7a3300; font-size: 15px; }
-  .important-box { background: #fff0f0; border-left: 4px solid #cc0000; padding: 16px 20px; border-radius: 0 6px 6px 0; margin: 20px 0; }
-  .important-box p { margin: 0; color: #7a0000; font-size: 15px; }
-  .contact-box { background: #f7f7f7; border-radius: 8px; padding: 24px 28px; margin-top: 16px; }
-  .contact-box p { margin-bottom: 6px; }
-  .footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid #e5e5e5; font-size: 13px; color: #999; text-align: center; }
-  @media (max-width: 600px) { .container { padding: 40px 20px 60px; } h1 { font-size: 26px; } }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian — Terms of Service</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+      color: #1a1a1a;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    header .app-name {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #555;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0.5rem 0 0.25rem;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.5rem;
+    }
+    .summary-box {
+      background: #f9f9f9;
+      border-left: 4px solid #333;
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0 2rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.95rem;
+    }
+    nav {
+      background: #f4f4f4;
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+    nav h2 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #888;
+      margin: 0 0 0.75rem;
+    }
+    nav ol {
+      margin: 0;
+      padding-left: 1.25rem;
+      font-size: 0.9rem;
+      columns: 2;
+      column-gap: 2rem;
+    }
+    nav ol li { margin-bottom: 0.25rem; }
+    nav a { color: #333; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin: 2.5rem 0 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid #e5e5e5;
+    }
+    h3 { font-size: 1.05rem; font-weight: 600; margin: 1.5rem 0 0.5rem; }
+    h4 { font-size: 1rem; font-weight: 600; margin: 1.25rem 0 0.4rem; }
+    p { margin: 0.6rem 0 1rem; }
+    ul, ol { padding-left: 1.5rem; margin: 0.5rem 0 1rem; }
+    li { margin-bottom: 0.35rem; }
+    a { color: #0070c9; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 1rem 0 1.5rem;
+    }
+    th {
+      background: #f0f0f0;
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      font-weight: 600;
+      border: 1px solid #ddd;
+    }
+    td {
+      padding: 0.55rem 0.75rem;
+      border: 1px solid #ddd;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #fafafa; }
+    .caps {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      nav ol { columns: 1; }
+      h1 { font-size: 1.5rem; }
+    }
+  </style>
 </head>
 <body>
-<div class="container">
 
-  <div class="header">
-    <div class="app-name">Meridian</div>
-    <h1>Terms of Service</h1>
-    <div class="meta">Effective Date: Mar 22, 2026 &nbsp;·&nbsp; Last Updated: Mar 22, 2026</div>
-  </div>
+<header>
+  <div class="app-name">Meridian</div>
+  <h1>Terms of Service</h1>
+  <div class="meta">Effective Date: Mar 22, 2026 &nbsp;·&nbsp; Last Updated: Mar 27, 2026</div>
+</header>
 
-  <div class="highlight-box">
-    <p><strong>Please read these Terms carefully.</strong> By downloading, installing, or using Meridian, you agree to be bound by these Terms. If you do not agree, do not use the app.</p>
-  </div>
+<p><strong>Please read these Terms carefully.</strong> By downloading, installing, or using Meridian, you agree to be bound by these Terms. If you do not agree, do not use the app.</p>
 
-  <div class="toc">
-    <div class="toc-title">Contents</div>
-    <ol>
-      <li><a href="#acceptance">Acceptance of Terms</a></li>
-      <li><a href="#eligibility">Eligibility</a></li>
-      <li><a href="#account">Your Account</a></li>
-      <li><a href="#license">License to Use the App</a></li>
-      <li><a href="#your-content">Your Content</a></li>
-      <li><a href="#sharing">Journal Entry Sharing</a></li>
-      <li><a href="#acceptable-use">Acceptable Use</a></li>
-      <li><a href="#subscriptions">Subscriptions and Payments</a></li>
-      <li><a href="#privacy">Privacy</a></li>
-      <li><a href="#third-party">Third-Party Services</a></li>
-      <li><a href="#intellectual-property">Intellectual Property</a></li>
-      <li><a href="#disclaimers">Disclaimers</a></li>
-      <li><a href="#limitation">Limitation of Liability</a></li>
-      <li><a href="#indemnification">Indemnification</a></li>
-      <li><a href="#termination">Termination</a></li>
-      <li><a href="#governing-law">Governing Law and Disputes</a></li>
-      <li><a href="#changes">Changes to These Terms</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ol>
-  </div>
+<nav>
+  <h2>Contents</h2>
+  <ol>
+    <li><a href="#acceptance">Acceptance of Terms</a></li>
+    <li><a href="#eligibility">Eligibility</a></li>
+    <li><a href="#account">Your Account</a></li>
+    <li><a href="#license">License to Use the App</a></li>
+    <li><a href="#your-content">Your Content</a></li>
+    <li><a href="#sharing">Journal Entry Sharing</a></li>
+    <li><a href="#acceptable-use">Acceptable Use</a></li>
+    <li><a href="#subscriptions">Subscriptions and Payments</a></li>
+    <li><a href="#privacy">Privacy</a></li>
+    <li><a href="#third-party">Third-Party Services</a></li>
+    <li><a href="#intellectual-property">Intellectual Property</a></li>
+    <li><a href="#disclaimers">Disclaimers</a></li>
+    <li><a href="#limitation">Limitation of Liability</a></li>
+    <li><a href="#indemnification">Indemnification</a></li>
+    <li><a href="#termination">Termination</a></li>
+    <li><a href="#governing-law">Governing Law and Disputes</a></li>
+    <li><a href="#changes">Changes to These Terms</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ol>
+</nav>
 
-  <!-- 1 -->
-  <h2 id="acceptance">1. Acceptance of Terms</h2>
-  <p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Vineet Antil ("Meridian," "we," "us," or "our") governing your access to and use of the Meridian mobile application and any related services (collectively, the "Service").</p>
-  <p>By creating an account, downloading, installing, or otherwise using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="https://vineetantil.github.io/meridian-legal/privacy-policy.html">Privacy Policy</a>, which is incorporated by reference.</p>
+<h2 id="acceptance">1. Acceptance of Terms</h2>
+<p>These Terms of Service ("Terms") constitute a legally binding agreement between you and Vineet Antil ("Meridian," "we," "us," or "our") governing your access to and use of the Meridian mobile application and any related services (collectively, the "Service").</p>
+<p>By creating an account, downloading, installing, or otherwise using the Service, you confirm that you have read, understood, and agree to be bound by these Terms and our <a href="https://vineetantil.github.io/meridian-legal/privacy-policy.html">Privacy Policy</a>, which is incorporated by reference.</p>
 
-  <!-- 2 -->
-  <h2 id="eligibility">2. Eligibility</h2>
-  <p>You must be at least 13 years old to use Meridian. If you are between 13 and 18 years old (or the age of majority in your jurisdiction), you represent that a parent or legal guardian has reviewed and agreed to these Terms on your behalf.</p>
-  <p>If you are located in the European Economic Area, you must be at least 16 years old, or have verifiable parental consent, to create an account.</p>
-  <p>By using the Service, you represent and warrant that you meet these eligibility requirements and that you have the legal capacity to enter into a binding agreement.</p>
+<h2 id="eligibility">2. Eligibility</h2>
+<p>You must be at least 13 years old to use Meridian. If you are between 13 and 18 years old (or the age of majority in your jurisdiction), you represent that a parent or legal guardian has reviewed and agreed to these Terms on your behalf.</p>
+<p>If you are located in the European Economic Area, you must be at least 16 years old, or have verifiable parental consent, to create an account.</p>
+<p>By using the Service, you represent and warrant that you meet these eligibility requirements and that you have the legal capacity to enter into a binding agreement.</p>
 
-  <!-- 3 -->
-  <h2 id="account">3. Your Account</h2>
-  <h3>3.1 Account Creation</h3>
-  <p>To access most features of Meridian, you must create an account. You may sign up using an email address and password, or using your existing Google account. You agree to provide accurate, current, and complete information and to keep it updated. You are responsible for all activity that occurs under your account.</p>
+<h2 id="account">3. Your Account</h2>
 
-  <h3>3.2 Google Sign-In</h3>
-  <p>If you choose to sign in with Google, you authorize us to access your Google account display name and email address as described in our Privacy Policy. You may revoke this access at any time through your Google account settings, which will require you to set up an alternative sign-in method or result in loss of access to your Meridian account.</p>
+<h3>3.1 Account Creation</h3>
+<p>To access most features of Meridian, you must create an account. You may sign up using an email address and password, or using your existing Google account. You agree to provide accurate, current, and complete information and to keep it updated. You are responsible for all activity that occurs under your account.</p>
 
-  <h3>3.3 Account Security</h3>
-  <p>You are responsible for maintaining the confidentiality of your login credentials. You agree to notify us immediately at <strong>vineetantil@gmail.com</strong> if you suspect any unauthorized use of your account. We are not liable for any loss or damage arising from your failure to maintain account security.</p>
+<h3>3.2 Google Sign-In</h3>
+<p>If you choose to sign in with Google, you authorize us to access your Google account display name and email address as described in our Privacy Policy. You may revoke this access at any time through your Google account settings, which will require you to set up an alternative sign-in method or result in loss of access to your Meridian account.</p>
 
-  <h3>3.4 Account Deletion</h3>
-  <p>You may delete your account at any time through the app settings. Account deletion is immediate and permanent. All of your personal data — including journal entries, photos, location data, home city, and account information — is permanently deleted upon account deletion. This action cannot be undone and deleted accounts cannot be recovered.</p>
+<h3>3.3 Account Security</h3>
+<p>You are responsible for maintaining the confidentiality of your login credentials. You agree to notify us immediately at <strong>vineetantil@gmail.com</strong> if you suspect any unauthorized use of your account. We are not liable for any loss or damage arising from your failure to maintain account security.</p>
 
-  <!-- 4 -->
-  <h2 id="license">4. License to Use the App</h2>
-  <p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use Meridian on your personal iOS device(s) for your own personal, non-commercial purposes.</p>
-  <p>This license does not include the right to:</p>
-  <ul>
-    <li>Copy, modify, or create derivative works of the app</li>
-    <li>Reverse engineer, decompile, or disassemble the app</li>
-    <li>Remove or alter any proprietary notices or labels</li>
-    <li>Use the app for commercial purposes without our written permission</li>
-    <li>Transfer, sublicense, or sell access to the app</li>
-  </ul>
+<h3>3.4 Account Deletion</h3>
+<p>You may delete your account at any time through the app settings. Account deletion is immediate and permanent. All of your personal data — including journal entries, photos, location data, home city, and account information — is permanently deleted upon account deletion. This action cannot be undone and deleted accounts cannot be recovered.</p>
 
-  <!-- 5 -->
-  <h2 id="your-content">5. Your Content</h2>
-  <h3>5.1 Ownership</h3>
-  <p>You retain full ownership of all content you create within Meridian, including journal entries, photos, notes, location tags, and any other content you submit ("Your Content"). We do not claim ownership over Your Content.</p>
+<h2 id="license">4. License to Use the App</h2>
+<p>Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to download, install, and use Meridian on your personal iOS device(s) for your own personal, non-commercial purposes.</p>
+<p>This license does not include the right to:</p>
+<ul>
+  <li>Copy, modify, or create derivative works of the app</li>
+  <li>Reverse engineer, decompile, or disassemble the app</li>
+  <li>Remove or alter any proprietary notices or labels</li>
+  <li>Use the app for commercial purposes without our written permission</li>
+  <li>Transfer, sublicense, or sell access to the app</li>
+</ul>
 
-  <h3>5.2 License to Us</h3>
-  <p>By submitting Your Content to Meridian, you grant us a limited, non-exclusive, royalty-free license to store, process, and display Your Content solely as necessary to provide the Service to you. This includes syncing your data across your devices, displaying it within the app, and enabling sharing features when you choose to use them.</p>
-  <p>We do not use Your Content to train machine learning models, show it to other users without your action, or use it for any purpose beyond providing the Service to you.</p>
+<h2 id="your-content">5. Your Content</h2>
 
-  <h3>5.3 Your Responsibilities</h3>
-  <p>You represent and warrant that:</p>
-  <ul>
-    <li>You own or have the necessary rights to all content you submit, including photos uploaded from your library</li>
-    <li>Your Content does not infringe any third-party intellectual property, privacy, or other rights</li>
-    <li>Your Content does not violate any applicable law</li>
-    <li>Photos you upload were taken with the consent of any individuals depicted in them</li>
-  </ul>
+<h3>5.1 Ownership</h3>
+<p>You retain full ownership of all content you create within Meridian, including journal entries, photos, notes, location tags, and any other content you submit ("Your Content"). We do not claim ownership over Your Content.</p>
 
-  <h3>5.4 Data Export</h3>
-  <p>You may request an export of Your Content at any time by contacting us at <strong>vineetantil@gmail.com</strong> with the subject line "Data Export Request." We will provide your data in JSON and/or CSV format within 30 days. Upon account deletion, all Your Content is permanently deleted and cannot be exported after deletion is initiated.</p>
+<h3>5.2 License to Us</h3>
+<p>By submitting Your Content to Meridian, you grant us a limited, non-exclusive, royalty-free license to store, process, and display Your Content solely as necessary to provide the Service to you. This includes syncing your data across your devices, displaying it within the app, and enabling sharing features when you choose to use them.</p>
+<p>We do not use Your Content to train machine learning models, show it to other users without your action, or use it for any purpose beyond providing the Service to you.</p>
 
-  <!-- 6 — NEW SECTION -->
-  <h2 id="sharing">6. Journal Entry Sharing</h2>
-  <p>Meridian allows you to share individual journal entries with other Meridian users. By using the sharing feature, you agree to the following:</p>
+<h3>5.3 Your Responsibilities</h3>
+<p>You represent and warrant that:</p>
+<ul>
+  <li>You own or have the necessary rights to all content you submit, including photos uploaded from your library</li>
+  <li>Your Content does not infringe any third-party intellectual property, privacy, or other rights</li>
+  <li>Your Content does not violate any applicable law</li>
+  <li>Photos you upload were taken with the consent of any individuals depicted in them</li>
+</ul>
 
-  <h3>6.1 How Sharing Works</h3>
-  <p>When you share a journal entry, a link is generated and delivered to the recipient via their Meridian notifications and received links section. The recipient must have an active Meridian account to access the shared entry. Shared entries are not publicly accessible and cannot be viewed without authentication.</p>
+<h3>5.4 Data Export</h3>
+<p>You may request an export of Your Content at any time by contacting us at <strong>vineetantil@gmail.com</strong> with the subject line "Data Export Request." We will provide your data in JSON and/or CSV format within 30 days. Upon account deletion, all Your Content is permanently deleted and cannot be exported after deletion is initiated.</p>
 
-  <h3>6.2 Your Responsibility for Shared Content</h3>
-  <p>You are solely responsible for the content you choose to share with other users. By sharing an entry, you represent that you have the right to share that content and that it does not violate these Terms, our acceptable use policy, or any applicable law. You should only share entries with users you know and trust.</p>
+<h2 id="sharing">6. Journal Entry Sharing</h2>
+<p>Meridian allows you to share individual journal entries with other Meridian users. By using the sharing feature, you agree to the following:</p>
 
-  <h3>6.3 Revoking Access</h3>
-  <p>You may stop sharing an entry at any time, which immediately revokes the recipient's access to that entry.</p>
+<h3>6.1 How Sharing Works</h3>
+<p>When you share a journal entry, a link is generated and delivered to the recipient via their Meridian notifications and received links section. The recipient must have an active Meridian account to access the shared entry. Shared entries are not publicly accessible and cannot be viewed without authentication.</p>
 
-  <h3>6.4 Deletion of Shared Content</h3>
-  <p>If you delete a shared journal entry or delete your account, the entry is immediately and permanently deleted from our systems. Any link previously shared becomes inaccessible and recipients will see a message that the content is no longer available. We do not retain copies of deleted shared entries.</p>
+<h3>6.2 Your Responsibility for Shared Content</h3>
+<p>You are solely responsible for the content you choose to share with other users. By sharing an entry, you represent that you have the right to share that content and that it does not violate these Terms, our acceptable use policy, or any applicable law. You should only share entries with users you know and trust.</p>
 
-  <h3>6.5 Content Received from Other Users</h3>
-  <p>If another user shares a journal entry with you, you may view that entry within Meridian. You may not download, copy, redistribute, or use another user's shared content for any purpose outside of viewing it within the app. If a user deletes their account or revokes sharing, you will lose access to their shared content immediately.</p>
+<h3>6.3 Revoking Access</h3>
+<p>You may stop sharing an entry at any time, which immediately revokes the recipient's access to that entry.</p>
 
-  <!-- 7 -->
-  <h2 id="acceptable-use">7. Acceptable Use</h2>
-  <p>You agree not to use Meridian to:</p>
-  <ul>
-    <li>Violate any applicable law or regulation</li>
-    <li>Upload or share content that is illegal, harmful, threatening, abusive, harassing, defamatory, or obscene</li>
-    <li>Share journal entries containing content that infringes the intellectual property or privacy rights of others</li>
-    <li>Infringe the intellectual property rights of others</li>
-    <li>Attempt to gain unauthorized access to any part of the Service or any related systems</li>
-    <li>Introduce malware, viruses, or other harmful code</li>
-    <li>Use automated tools to scrape or extract data from the Service</li>
-    <li>Impersonate any person or entity</li>
-    <li>Use the Service in any way that could damage, disable, overburden, or impair it</li>
-    <li>Share another user's journal entries outside of the app without their explicit permission</li>
-  </ul>
-  <p>We reserve the right to suspend or terminate your account if we determine, in our sole discretion, that you have violated these acceptable use provisions.</p>
+<h3>6.4 Deletion of Shared Content</h3>
+<p>If you delete a shared journal entry or delete your account, the entry is immediately and permanently deleted from our systems. Any link previously shared becomes inaccessible and recipients will see a message that the content is no longer available. We do not retain copies of deleted shared entries.</p>
 
-  <!-- 8 -->
-  <h2 id="subscriptions">8. Subscriptions and Payments</h2>
-  <h3>8.1 Current Availability</h3>
-  <p>Meridian is currently available as a free application. Paid subscription features, if introduced in the future, will be disclosed clearly within the app before any charges are incurred.</p>
+<h3>6.5 Content Received from Other Users</h3>
+<p>If another user shares a journal entry with you, you may view that entry within Meridian. You may not download, copy, redistribute, or use another user's shared content for any purpose outside of viewing it within the app. If a user deletes their account or revokes sharing, you will lose access to their shared content immediately.</p>
 
-  <h3>8.2 Future Subscription Billing</h3>
-  <p>If and when paid subscriptions are introduced, they will be billed on a recurring basis through the Apple App Store. By subscribing, you would authorize Apple to charge your payment method on a recurring basis until you cancel. Subscription prices will be displayed before purchase and may be subject to applicable taxes.</p>
+<h2 id="acceptable-use">7. Acceptable Use</h2>
+<p>You agree not to use Meridian to:</p>
+<ul>
+  <li>Violate any applicable law or regulation</li>
+  <li>Upload or share content that is illegal, harmful, threatening, abusive, harassing, defamatory, or obscene</li>
+  <li>Share journal entries containing content that infringes the intellectual property or privacy rights of others</li>
+  <li>Infringe the intellectual property rights of others</li>
+  <li>Attempt to gain unauthorized access to any part of the Service or any related systems</li>
+  <li>Introduce malware, viruses, or other harmful code</li>
+  <li>Use automated tools to scrape or extract data from the Service</li>
+  <li>Impersonate any person or entity</li>
+  <li>Use the Service in any way that could damage, disable, overburden, or impair it</li>
+  <li>Share another user's journal entries outside of the app without their explicit permission</li>
+</ul>
+<p>We reserve the right to suspend or terminate your account if we determine, in our sole discretion, that you have violated these acceptable use provisions.</p>
 
-  <h3>8.3 Cancellation and Refunds</h3>
-  <p>If paid subscriptions are introduced, you may cancel at any time through your Apple App Store account settings. All purchases made through Apple App Store are subject to Apple's refund policies. For refund requests, please contact Apple Support directly.</p>
+<h2 id="subscriptions">8. Subscriptions and Payments</h2>
 
-  <h3>8.4 EU/UK Consumer Rights</h3>
-  <p>If you are located in the European Union or United Kingdom and a paid subscription is introduced, you may have a statutory right to withdraw from a digital service contract within 14 days of purchase. By accessing paid features immediately after purchase, you acknowledge that you waive this withdrawal right, as permitted by applicable consumer law.</p>
+<h3>8.1 Meridian Pro Subscription</h3>
+<p>Meridian offers a Meridian Pro subscription that unlocks premium features within the app. Subscription details, pricing, and included features are displayed within the app prior to purchase. The free version of Meridian remains available with core functionality.</p>
 
-  <!-- 9 -->
-  <h2 id="privacy">9. Privacy</h2>
-  <p>Your use of Meridian is also governed by our <a href="https://vineetantil.github.io/meridian-legal/privacy-policy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. By using the Service, you consent to the collection and use of your information as described in the Privacy Policy.</p>
-  <p>Meridian collects and processes location data and home city information as part of its core functionality. Please review the Privacy Policy for full details.</p>
+<h3>8.2 Billing and Auto-Renewal</h3>
+<p>Meridian Pro is offered as an auto-renewing subscription billed through the Apple App Store. The subscription period and price are disclosed at the time of purchase. Your subscription will automatically renew at the end of each billing period unless you cancel at least 24 hours before the renewal date. Your Apple ID account will be charged upon confirmation of purchase and at the start of each renewal period.</p>
 
-  <!-- 10 -->
-  <h2 id="third-party">10. Third-Party Services</h2>
-  <p>Meridian uses third-party services including Mapbox (maps), Google Places API (location and city search), Google Sign-In (authentication), Supabase (database), PowerSync (offline sync), and Expo EAS (app delivery). Your use of these services through Meridian is subject to their respective terms of service and privacy policies. We are not responsible for the practices of these third parties.</p>
-  <p>By using Google Sign-In, you also agree to Google's Terms of Service available at <a href="https://policies.google.com/terms" target="_blank">policies.google.com/terms</a>.</p>
+<h3>8.3 Free Trial</h3>
+<p>If a free trial is offered, the trial duration and the price that will be charged upon conversion will be clearly disclosed at the time of sign-up. If you do not cancel before the trial period ends, your subscription will automatically begin and your payment method will be charged. You may cancel a free trial at any time through your Apple ID account settings.</p>
 
-  <!-- 11 -->
-  <h2 id="intellectual-property">11. Intellectual Property</h2>
-  <p>The Meridian app, including its name, logo, design, software, and all content we create (excluding Your Content), is owned by Vineet Antil and is protected by copyright, trademark, and other intellectual property laws.</p>
-  <p>You may not use our name, logo, or branding without our prior written consent.</p>
-  <p>If you believe that content within Meridian infringes your intellectual property rights, please contact us at <strong>vineetantil@gmail.com</strong> with details of the alleged infringement.</p>
+<h3>8.4 Cancellation</h3>
+<p>You may cancel your subscription at any time through your Apple ID account settings (Settings → [your name] → Subscriptions). Cancellation takes effect at the end of the current billing period. You will retain access to Meridian Pro features until the end of the paid period. Cancellation does not entitle you to a refund for the current billing period.</p>
 
-  <!-- 12 -->
-  <h2 id="disclaimers">12. Disclaimers</h2>
-  <div class="important-box">
-    <p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
-  </div>
-  <p>We do not warrant that:</p>
-  <ul>
-    <li>The Service will be uninterrupted, error-free, or secure</li>
-    <li>Maps, location data, or place information provided through the Service are accurate or up to date</li>
-    <li>Shared journal entry links will remain accessible indefinitely</li>
-    <li>The Service or the servers that make it available are free of viruses or other harmful components</li>
-  </ul>
-  <p>Meridian is a personal journaling tool and is not intended for use in safety-critical situations. Do not rely on Meridian's maps or location features for navigation in dangerous environments.</p>
-  <p><strong>Note for users in the EU/UK:</strong> Nothing in this section limits statutory rights you may have under applicable consumer protection laws that cannot be excluded by contract.</p>
+<h3>8.5 Refunds</h3>
+<p>All purchases are processed by Apple. We do not issue refunds directly. For refund requests, please contact Apple Support at <a href="https://support.apple.com">apple.com/support</a>. Apple's refund policies apply to all in-app purchases made through the App Store.</p>
 
-  <!-- 13 -->
-  <h2 id="limitation">13. Limitation of Liability</h2>
-  <div class="important-box">
-    <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL MERIDIAN, ITS OPERATORS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF DATA, LOSS OF PROFITS, OR LOSS OF GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE SERVICE.</p>
-  </div>
-  <p>Our total liability to you for any claim arising out of or relating to these Terms or the Service shall not exceed the greater of (a) the amount you paid us in the 12 months preceding the claim, or (b) $50 USD.</p>
-  <p>We are not liable for any content shared between users via the journal entry sharing feature, including any loss of access to shared content resulting from another user deleting their account or revoking sharing permissions.</p>
-  <p><strong>Note for users in the EU/UK:</strong> These limitations do not apply to liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be limited or excluded under applicable law.</p>
+<h3>8.6 Price Changes</h3>
+<p>We may change subscription pricing at any time. If the price of your subscription increases, Apple will notify you before the change takes effect and your subscription will not auto-renew at the new price without your explicit consent.</p>
 
-  <!-- 14 -->
-  <h2 id="indemnification">14. Indemnification</h2>
-  <p>You agree to indemnify, defend, and hold harmless Meridian and its operators from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in connection with:</p>
-  <ul>
-    <li>Your use of the Service in violation of these Terms</li>
-    <li>Your Content, including any claim that Your Content infringes a third party's rights</li>
-    <li>Content you share with other users via the sharing feature</li>
-    <li>Your violation of any applicable law or regulation</li>
-  </ul>
+<h3>8.7 Subscription Management and Entitlements</h3>
+<p>Subscription status and entitlements are managed through RevenueCat. RevenueCat receives subscription status information from Apple on our behalf to determine whether Meridian Pro features should be active for your account. Your payment card information is never shared with RevenueCat or us — it remains solely with Apple.</p>
 
-  <!-- 15 -->
-  <h2 id="termination">15. Termination</h2>
-  <h3>15.1 By You</h3>
-  <p>You may stop using Meridian and delete your account at any time through the app settings. Account deletion is immediate and permanent. All your data is deleted with no recovery period, as described in Section 3.4.</p>
+<h3>8.8 Effect of Cancellation on Data</h3>
+<p>Cancelling your subscription does not delete your account or your journal data. Your entries, photos, and other content remain accessible under the free tier. If any features require Meridian Pro, those features will become unavailable after the current billing period ends, but the underlying data associated with them is not deleted.</p>
 
-  <h3>15.2 By Us</h3>
-  <p>We reserve the right to suspend or terminate your account and access to the Service at any time, with or without notice, if we believe you have violated these Terms or for any other business reason. We will make reasonable efforts to notify you before termination unless immediate action is required.</p>
+<h3>8.9 EU/UK Consumer Rights</h3>
+<p>If you are located in the European Union or United Kingdom, you may have a statutory right to withdraw from a digital service contract within 14 days of purchase. By accessing Meridian Pro features immediately after purchase, you acknowledge that you waive this withdrawal right, as permitted by applicable consumer law.</p>
 
-  <h3>15.3 Effect of Termination</h3>
-  <p>Upon termination, the license granted to you under these Terms will immediately terminate. Any journal entries you have shared with other users will become inaccessible to recipients upon account deletion. Sections that by their nature should survive termination (including Sections 5.1, 11, 12, 13, 14, and 16) will survive.</p>
+<h2 id="privacy">9. Privacy</h2>
+<p>Your use of Meridian is also governed by our <a href="https://vineetantil.github.io/meridian-legal/privacy-policy.html">Privacy Policy</a>, which is incorporated into these Terms by reference. By using the Service, you consent to the collection and use of your information as described in the Privacy Policy.</p>
+<p>Meridian collects and processes location data and home city information as part of its core functionality. Please review the Privacy Policy for full details.</p>
 
-  <!-- 16 -->
-  <h2 id="governing-law">16. Governing Law and Disputes</h2>
-  <h3>16.1 Governing Law</h3>
-  <p>These Terms are governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law principles.</p>
+<h2 id="third-party">10. Third-Party Services</h2>
+<p>Meridian uses third-party services including Mapbox (maps), Google Places API (location and city search), Google Sign-In (authentication), Supabase (database), PowerSync (offline sync), RevenueCat (subscription management), and Expo EAS (app delivery). Your use of these services through Meridian is subject to their respective terms of service and privacy policies. We are not responsible for the practices of these third parties.</p>
+<p>By using Google Sign-In, you also agree to Google's Terms of Service available at <a href="https://policies.google.com/terms">policies.google.com/terms</a>.</p>
 
-  <h3>16.2 Informal Resolution</h3>
-  <p>Before initiating any formal dispute, you agree to contact us at <strong>vineetantil@gmail.com</strong> and give us 30 days to attempt to resolve the issue informally.</p>
+<h2 id="intellectual-property">11. Intellectual Property</h2>
+<p>The Meridian app, including its name, logo, design, software, and all content we create (excluding Your Content), is owned by Vineet Antil and is protected by copyright, trademark, and other intellectual property laws.</p>
+<p>You may not use our name, logo, or branding without our prior written consent.</p>
+<p>If you believe that content within Meridian infringes your intellectual property rights, please contact us at <strong>vineetantil@gmail.com</strong> with details of the alleged infringement.</p>
 
-  <h3>16.3 Dispute Resolution</h3>
-  <p>Any dispute that cannot be resolved informally shall be submitted to binding arbitration administered by JAMS under its Streamlined Arbitration Rules, except that either party may bring claims in small claims court if the claim qualifies. The arbitration will take place in Los Angeles County, California, or remotely by mutual agreement.</p>
+<h2 id="disclaimers">12. Disclaimers</h2>
+<p class="caps">THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.</p>
+<p>We do not warrant that:</p>
+<ul>
+  <li>The Service will be uninterrupted, error-free, or secure</li>
+  <li>Maps, location data, or place information provided through the Service are accurate or up to date</li>
+  <li>Shared journal entry links will remain accessible indefinitely</li>
+  <li>The Service or the servers that make it available are free of viruses or other harmful components</li>
+</ul>
+<p>Meridian is a personal journaling tool and is not intended for use in safety-critical situations. Do not rely on Meridian's maps or location features for navigation in dangerous environments.</p>
+<p><strong>Note for users in the EU/UK:</strong> Nothing in this section limits statutory rights you may have under applicable consumer protection laws that cannot be excluded by contract.</p>
 
-  <h3>16.4 Class Action Waiver</h3>
-  <p>You agree that any dispute resolution proceedings will be conducted on an individual basis only, and not in a class, consolidated, or representative action.</p>
+<h2 id="limitation">13. Limitation of Liability</h2>
+<p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL MERIDIAN, ITS OPERATORS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOSS OF DATA, LOSS OF PROFITS, OR LOSS OF GOODWILL, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE SERVICE.</p>
+<p>Our total liability to you for any claim arising out of or relating to these Terms or the Service shall not exceed the greater of (a) the amount you paid us in the 12 months preceding the claim, or (b) $50 USD.</p>
+<p>We are not liable for any content shared between users via the journal entry sharing feature, including any loss of access to shared content resulting from another user deleting their account or revoking sharing permissions.</p>
+<p><strong>Note for users in the EU/UK:</strong> These limitations do not apply to liability for death or personal injury caused by our negligence, fraud or fraudulent misrepresentation, or any other liability that cannot be limited or excluded under applicable law.</p>
 
-  <h3>16.5 EU/UK Users</h3>
-  <p>If you are located in the European Union or United Kingdom, you may be entitled to bring claims in the courts of your country of residence and may have the right to use the EU Online Dispute Resolution platform at <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies_en" target="_blank">consumer-redress.ec.europa.eu/dispute-resolution-bodies</a>. Nothing in these Terms limits your statutory rights under EU or UK consumer protection law.</p>
+<h2 id="indemnification">14. Indemnification</h2>
+<p>You agree to indemnify, defend, and hold harmless Meridian and its operators from and against any claims, liabilities, damages, losses, and expenses (including reasonable legal fees) arising out of or in connection with:</p>
+<ul>
+  <li>Your use of the Service in violation of these Terms</li>
+  <li>Your Content, including any claim that Your Content infringes a third party's rights</li>
+  <li>Content you share with other users via the sharing feature</li>
+  <li>Your violation of any applicable law or regulation</li>
+</ul>
 
-  <!-- 17 -->
-  <h2 id="changes">17. Changes to These Terms</h2>
-  <p>We may modify these Terms from time to time. When we make material changes, we will:</p>
-  <ul>
-    <li>Update the "Last Updated" date at the top of this page</li>
-    <li>Notify you via email or an in-app notice at least 14 days before the changes take effect</li>
-  </ul>
-  <p>Your continued use of Meridian after the effective date of the revised Terms constitutes your acceptance. If you do not agree to the changes, you must stop using the Service and may delete your account.</p>
+<h2 id="termination">15. Termination</h2>
 
-  <!-- 18 -->
-  <h2 id="contact">18. Contact Us</h2>
-  <p>If you have any questions about these Terms, please contact us:</p>
+<h3>15.1 By You</h3>
+<p>You may stop using Meridian and delete your account at any time through the app settings. Account deletion is immediate and permanent. All your data is deleted with no recovery period, as described in Section 3.4.</p>
 
-  <div class="contact-box">
-    <p><strong>Vineet Antil</strong></p>
-    <p>Email: <strong>vineetantil@gmail.com</strong></p>
-    <p>Location: <strong>San Francisco, California, United States</strong></p>
-    <p style="margin-top: 12px; font-size: 14px; color: #666;">For legal notices, please send written correspondence to the address above and email simultaneously to ensure timely receipt.</p>
-  </div>
+<h3>15.2 By Us</h3>
+<p>We reserve the right to suspend or terminate your account and access to the Service at any time, with or without notice, if we believe you have violated these Terms or for any other business reason. We will make reasonable efforts to notify you before termination unless immediate action is required.</p>
 
-  <div class="footer">
-    <p>Meridian Terms of Service &nbsp;·&nbsp; Effective Mar 22, 2026 &nbsp;·&nbsp; Version 1.1</p>
-  </div>
+<h3>15.3 Effect of Termination</h3>
+<p>Upon termination, the license granted to you under these Terms will immediately terminate. Any journal entries you have shared with other users will become inaccessible to recipients upon account deletion. Sections that by their nature should survive termination (including Sections 5.1, 11, 12, 13, 14, and 16) will survive.</p>
 
-</div>
+<h2 id="governing-law">16. Governing Law and Disputes</h2>
+
+<h3>16.1 Governing Law</h3>
+<p>These Terms are governed by and construed in accordance with the laws of the State of California, United States, without regard to its conflict of law principles.</p>
+
+<h3>16.2 Informal Resolution</h3>
+<p>Before initiating any formal dispute, you agree to contact us at <strong>vineetantil@gmail.com</strong> and give us 30 days to attempt to resolve the issue informally.</p>
+
+<h3>16.3 Dispute Resolution</h3>
+<p>Any dispute that cannot be resolved informally shall be submitted to binding arbitration administered by JAMS under its Streamlined Arbitration Rules, except that either party may bring claims in small claims court if the claim qualifies. The arbitration will take place in Los Angeles County, California, or remotely by mutual agreement.</p>
+
+<h3>16.4 Class Action Waiver</h3>
+<p>You agree that any dispute resolution proceedings will be conducted on an individual basis only, and not in a class, consolidated, or representative action.</p>
+
+<h3>16.5 EU/UK Users</h3>
+<p>If you are located in the European Union or United Kingdom, you may be entitled to bring claims in the courts of your country of residence and may have the right to use the EU Online Dispute Resolution platform at <a href="https://consumer-redress.ec.europa.eu/dispute-resolution-bodies_en">consumer-redress.ec.europa.eu</a>. Nothing in these Terms limits your statutory rights under EU or UK consumer protection law.</p>
+
+<h2 id="changes">17. Changes to These Terms</h2>
+<p>We may modify these Terms from time to time. When we make material changes, we will:</p>
+<ul>
+  <li>Update the "Last Updated" date at the top of this page</li>
+  <li>Notify you via email or an in-app notice at least 14 days before the changes take effect</li>
+</ul>
+<p>Your continued use of Meridian after the effective date of the revised Terms constitutes your acceptance. If you do not agree to the changes, you must stop using the Service and may delete your account.</p>
+
+<h2 id="contact">18. Contact Us</h2>
+<p>If you have any questions about these Terms, please contact us:</p>
+<p>
+  <strong>Vineet Antil</strong><br>
+  Email: <strong>vineetantil@gmail.com</strong><br>
+  Location: <strong>San Francisco, California, United States</strong>
+</p>
+<p>For legal notices, please send written correspondence to the address above and email simultaneously to ensure timely receipt.</p>
+
+<footer>
+  Meridian Terms of Service &nbsp;·&nbsp; Effective Mar 22, 2026 &nbsp;·&nbsp; Last Updated Mar 27, 2026 &nbsp;·&nbsp; Version 1.2
+</footer>
+
 </body>
 </html>
